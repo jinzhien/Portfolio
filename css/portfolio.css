@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+     font-family: 'S-CoreDream-1Thin';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+     font-family: 'Education';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Education'), url('https://fonts.cdnfonts.com/s/49839/Education.woff') format('woff');
+ }
+ 
+/* 폰트설정 */
+html{font-size: 10px;}
+@media (max-width: 575px) {
+     html{font-size: 8px;}
+}
+body{font-family: 'GmarketSansLight';}
+#hd{font-family: 'GmarketSansMedium'; font-size: 2rem;}
+h2{font-family: 'GmarketSansBold'; font-size: 4rem;}
+h3{font-family: 'GmarketSansBold'; font-size: 2.5rem;}
+h4{font-family: 'GmarketSansMedium'; font-size: 2.5rem;}
+br { font-family:'dotum';}
+i{font-family: 'xeicon';}
+
+/* 공통 */
+.blind{position: absolute; visibility: hidden; overflow: hidden; left: -999999px; width: 0; height: 0; font-size: 0; line-height: 0; opacity: 0;}
+.container{width: 100%; max-width: 1400px;}
+.section{padding: 100px 10px; box-sizing: border-box;}
+@media (max-width: 767px) {
+     .section{padding: 60px 10px;}
+}
+.section h2{margin-bottom: 80px; color: #2b2f33; text-align: center;}
+
+/* 헤더 */
+#hd{position: fixed; left: 0; right: 0; top: 0; z-index: 100; padding: 20px; background-color: #fff;}
+#hd .hd_logo a img{height: 40px;}
+#hd i{display: none;}
+#gnb{display: block;}
+#gnb .nav{justify-content: flex-end;}
+#gnb .nav li a{margin-left: 50px; color: #2b2f33; text-decoration: none;}
+#gnb .nav li.on a{background: linear-gradient(to top, #f3e4ac 70%, transparent 50%);}
+@media (max-width: 767px) {
+     #hd i{display: block;}
+     #gnb{display: none; position: absolute; right: 0; top: 74px; z-index: 10; width: 100%; background-color: #fff;}
+     #gnb .nav{flex-direction: column;}
+     #gnb .nav li{padding: 15px 0; border-bottom: 1px solid #eee;}
+     #gnb .nav li a{margin-left: 25px;}
+}
+
+/* 메인배너 */
+#banner{display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; background-color: #fff;}
+@media (max-width: 575px) {
+     #banner{height: 70vh;}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+     #banner{height: 90vh;}
+}
+#banner ul li{font-family: 'Education'; font-size: 8vw; color: #6294cd; text-align: center; line-height: 1.3;}
+.typing_txt{display: none;}
+ul{list-style:none;}
+.typing ul li.on {display: inline-block; -webkit-animation: cursor 1s infinite; -moz-animation: cursor 1s infinite; animation: cursor 1s infinite;} 
+@keyframes cursor{ 
+  0%{border-right: 2px solid #fff} 
+  50%{border-right: 2px solid #f3e4ac} 
+  100%{border-right: 2px solid #fff} 
+}
+
+/* 어바웃미 */
+#sec1{padding-top: 50px;}
+#sec1 .gx-6{display: flex; align-items: center;}
+#sec1 .about_txt h3{padding: 25px 0 10px;}
+#sec1 .about_txt p{margin-bottom: .5rem; font-size: 1.5rem;}
+
+/* 포트폴리오 */
+#sec2 h2{margin-bottom: 50px;}
+#sec2 .skill_icon img{margin: 0 10px 80px 0;}
+#sec2 .box{position: relative; width: 100%; margin-bottom: 30px;}
+#sec2 .box img{width: 100%; box-shadow: 0 5px 20px 0 rgba(0,0,0,.2); border-radius: 37px;}
+#sec2 .box .txt_bg{display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 37px; background: #000000; opacity: .7; transition: .5s;}
+#sec2 .work_txt{position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); width: 100%; color: #fff; opacity: 0; transition: .5s;}
+#sec2 .work_txt h4{margin-bottom: 20px;}
+#sec2 .work_txt p{font-size: 1.5rem; }
+#sec2 .work_txt .work_link{margin-top: 30px;}
+#sec2 .work_txt a{padding: 5px 10px; border: 1px solid #fff; font-size: 1.5rem; color: #fff;   text-decoration: none;}
+#sec2 .box:hover .txt_bg{display: block;}
+#sec2 .box:hover .work_txt{z-index: 10; opacity: 1; }
+#sec2 .work_txt a:hover{font-weight: bold;}
+@media (max-width: 575px) {
+     #sec2 .skill_icon img{height: 25px; margin-bottom: 50px;} 
+     #sec2 .work_txt h4{margin-bottom: 10px;}
+     #sec2 .work_txt .work_link{margin-top: 20px;}
+}
+
+/* 셀프인터뷰 */
+#sec3 .container_1180{width: 100%; max-width: 1180px;}
+#sec3 #interview dt{display: flex; justify-content: space-between; padding: 22px 30px 22px 30px; border-bottom: 1px solid #C9C9C9; font-size: 1.8rem; color: #2c2e33; line-height: 3rem;}
+#sec3 .border_top{border-top: 1px solid #C9C9C9;}
+#sec3 .xi-plus-min{display: flex; align-items: center;}
+#sec3 #interview dd{display: none; padding: 22px 50px 22px 50px; border-bottom: 1px solid #C9C9C9; background: #eee; font-size: 1.6rem; color: #2c2e33; line-height: 2.4rem;  }
+#sec3 #interview dt.on + dd{display: block;}
+#sec3 #interview dt.on .xi-plus-min:before{content: "\e91b";}
+@media (max-width: 575px) {
+     #sec3 #interview dt{padding: 22px 15px 22px 15px;}
+     #sec3 #interview dd{padding: 22px 20px 22px 20px;}     
+}
+
+/* 컨택 */
+#sec4{padding: 100px 10px 70px; z-index: 50; background-color: #2b2f33;}
+#sec4 h2{color: #fff; margin-bottom: 50px;}
+#sec4 p{color: #fff; font-size: 2rem; text-align: center;}
+#sec4 a{color: #fff; text-decoration: none;}
+.contact_icon{margin-top: 50px; align-items: center;}
+.contact_icon .sns{margin-right: 50px;}
+.contact_icon img{padding-right: 10px;}
+.contact_icon span{color: #fff; font-size: 1.3rem; }
+@media (max-width: 575px) {
+     .contact_icon .sns{margin-right: 20px;}
+     .contact_icon .sns:last-child{margin-right: 0;}
+     .contact_icon span{display: none;}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+     .contact_icon .sns{margin-right: 10px;}
+     .contact_icon span{font-size: 1.2rem;}
+}
+
+/* 푸터 */
+#ft{padding: 30px; background-color: #2b2f33; text-align: center; color: #fff;}
+#ft p{margin-bottom: 0; font-size: 1.5rem;}
+
+/* 탑버튼 */
+.top_btn{display: flex; justify-content: center; align-items: center; position: fixed; right: 40px; bottom: 40px; width: 70px; height: 70px; border-radius: 50%; background-color: #e75041; transform: translateY(180%);  transition: .5s; z-index: 200;}
+.top_btn a{font-size: 1.5rem; color: #fff; text-decoration: none;}
+.top_btn:hover a{font-family: 'GmarketSansMedium'}
+.scroll .top_btn{transform: translateX(0);}
+@media (max-width: 575px) {
+     .top_btn{position: fixed; right: 20px; bottom: 20px; width: 60px; height: 60px;}
+}
+
+
+/* 고정컨택 */
+#contact_fixed{display: flex; flex-direction: column; justify-content: center; align-items: center; position: fixed; bottom: 0; overflow: hidden;  z-index: 100; width: 100%; height: 70px; background-color: #f3e4ac; opacity: 0.7;
+}
+#contact_fixed a{text-decoration: none;}
+#contact_fixed h2{text-align: center; margin-bottom: 0; font-size: 2.5rem; color: #2b2f33;}
+#contact_fixed.on{display: none;}
