@@ -55,7 +55,7 @@ function interview(num){
 // 모바일 gnb
 $(document).ready(function(){
     $(".xi-bars").on('click', function(){
-        $("#gnb").stop().slideToggle()
+        $(".gnb").stop().slideToggle()
     })
 })
 

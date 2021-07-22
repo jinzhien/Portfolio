@@ -55,16 +55,17 @@ i{font-family: 'xeicon';}
 #hd{position: fixed; left: 0; right: 0; top: 0; z-index: 100; padding: 20px; background-color: #fff;}
 #hd .hd_logo a img{height: 40px;}
 #hd i{display: none;}
-#gnb{display: block;}
-#gnb .nav{justify-content: flex-end;}
-#gnb .nav li a{margin-left: 50px; color: #2b2f33; text-decoration: none;}
-#gnb .nav li.on a{background: linear-gradient(to top, #f3e4ac 70%, transparent 50%);}
+#hd .container .row{display: flex !important;}
+.gnb{display: block;}
+.gnb .nav{justify-content: flex-end;}
+.gnb .nav li a{margin-left: 50px; color: #2b2f33; text-decoration: none;}
+.gnb .nav li.on a{background: linear-gradient(to top, #f3e4ac 70%, transparent 50%);}
 @media (max-width: 767px) {
      #hd i{display: block;}
-     #gnb{display: none; position: absolute; right: 0; top: 74px; z-index: 10; width: 100%; background-color: #fff;}
-     #gnb .nav{flex-direction: column;}
-     #gnb .nav li{padding: 15px 0; border-bottom: 1px solid #eee;}
-     #gnb .nav li a{margin-left: 25px;}
+     .gnb{display: none; position: absolute; right: 0; top: 74px; z-index: 10; width: 100%; background-color: #fff;}
+     .gnb .nav{flex-direction: column;}
+     .gnb .nav li{padding: 15px 0; border-bottom: 1px solid #eee;}
+     .gnb .nav li a{margin-left: 25px;}
 }
 
 /* 메인배너 */
@@ -101,10 +102,10 @@ ul{list-style:none;}
 #sec2 .work_txt h4{margin-bottom: 20px;}
 #sec2 .work_txt p{font-size: 1.5rem; }
 #sec2 .work_txt .work_link{margin-top: 30px;}
-#sec2 .work_txt a{padding: 5px 10px; border: 1px solid #fff; font-size: 1.5rem; color: #fff;   text-decoration: none;}
+#sec2 .work_txt a{padding: 5px 10px; border: 1px solid #fff; font-size: 1.5rem; color: #fff; text-decoration: none; transition: .5s;}
 #sec2 .box:hover .txt_bg{display: block;}
 #sec2 .box:hover .work_txt{z-index: 10; opacity: 1; }
-#sec2 .work_txt a:hover{font-weight: bold;}
+#sec2 .work_txt a:hover{font-weight: bold; background-color: #fff; color: #000;}
 @media (max-width: 575px) {
      #sec2 .skill_icon img{height: 25px; margin-bottom: 50px;} 
      #sec2 .work_txt h4{margin-bottom: 10px;}
