@@ -130,6 +130,7 @@ ul{list-style:none;}
 #sec4 h2{color: #fff; margin-bottom: 50px;}
 #sec4 p{color: #fff; font-size: 2rem; text-align: center;}
 #sec4 a{color: #fff; text-decoration: none;}
+#sec4 p a:hover{border-bottom: 1px solid #fff; padding-bottom: 3px;}
 .contact_icon{margin-top: 50px; align-items: center;}
 .contact_icon .sns{margin-right: 50px;}
 .contact_icon img{padding-right: 10px;}
